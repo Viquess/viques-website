@@ -135,6 +135,7 @@ section{
 }
 
 section .main-container{ 
+    margin-top: 1%;
     display: flex;
     justify-content: space-between;
     padding-left: 100px;
@@ -143,8 +144,9 @@ section .main-container{
 
 .main-container .image{
     width: 500px;
-    height: 80vh;
+    height: 70vh;
     border-radius: 100%;
+    margin-left: auto;
     overflow: hidden;
     box-shadow: 0 0 50px #684bb7;
 }
@@ -169,6 +171,10 @@ section .main-container{
     100%{
         scale: 1;
     }
+}
+
+div.button button{
+    margin:auto
 }
 
 .main-container .content{
@@ -319,6 +325,7 @@ section .title span::after{
 }
 .about-details .right{
     width: 55%;
+    padding: 2%;
 }
 section .topic{
     color: white;
@@ -498,7 +505,7 @@ footer .text span a:hover{
     display: none;
 }
 
-@media (max-width:1000px) {
+@media (max-width:1100px) {
     .about .about-details{
         justify-content: center;
         flex-direction: column;
@@ -518,14 +525,7 @@ footer .text span a:hover{
     }
 }
 
-@media (max-width:900px) {
-    .about .left img{
-        height: 350px;
-        width: 350px;
-    }
-}
-
-@media (max-width: 968px) {
+@media (max-width: 1070px) {
     nav .logo {
         position: absolute;
         top: 16px;
@@ -564,6 +564,7 @@ footer .text span a:hover{
         z-index: -1;
         width: 50%;
         height: 60%;
+        margin-left: 0;
     }
 
     .skills .skills-details{
@@ -580,11 +581,18 @@ footer .text span a:hover{
         align-items: center;
         width: 100%;
     }
-    .services .boxes .box{
-        margin: 20px 0;
+    .contact .text{
         width: 100%;
     }
-    .contact .text{
+}
+
+@media (max-width:900px) {
+    .about .left img{
+        height: 350px;
+        width: 350px;
+    }
+    .services .boxes .box{
+        margin: 20px 0;
         width: 100%;
     }
 }
