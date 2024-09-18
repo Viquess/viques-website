@@ -327,6 +327,8 @@ section .button{
     margin: 16px 0;
 }
 section .button button{
+    display: flex;
+    align-items: center;
     outline: none;
     padding: 8px 16px;
     border-radius: 4px;
