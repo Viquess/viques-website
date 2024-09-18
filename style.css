@@ -176,6 +176,11 @@ section .main-container{
     width: 40%;
 }
 
+.wrapper {
+    display: block;
+    margin: 0 auto;
+}
+
 .content h1{
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
 }
@@ -237,6 +242,8 @@ section .main-container{
 }
 
 .content button{
+    display: block;
+    margin: 0 auto;
     width: 50%;
     height: 6vh;
     margin: 30px;
@@ -327,8 +334,6 @@ section .button{
     margin: 16px 0;
 }
 section .button button{
-    display: flex;
-    align-items: center;
     outline: none;
     padding: 8px 16px;
     border-radius: 4px;
